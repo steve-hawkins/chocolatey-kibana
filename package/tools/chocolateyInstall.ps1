@@ -31,4 +31,5 @@ Start-ChocolateyProcessAsAdmin `
 
 Set-Service -Name 'elastic-kibana' `
   -DisplayName "Elastic Kibana $($kibana_version)" `
-  -Description 'Your window into the Elastic stack.'
+  -Description 'Your window into the Elastic stack.' `
+  -StartupType Manual
